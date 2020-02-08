@@ -170,6 +170,17 @@ module.exports = function(
   // Copy over some of the devDependencies
   appPackage.dependencies = appPackage.dependencies || {};
 
+  appPackage.devDependencies = {
+    "pretty-quick": "*",
+    "husky": "*"
+  }
+
+  appPackage.husky = {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+
   // Setup the script rules
   // TODO: deprecate 'scripts' key directly on templateJson
   const templateScripts = templatePackage.scripts || templateJson.scripts || {};
