@@ -172,7 +172,8 @@ module.exports = function(
 
   appPackage.devDependencies = {
     "pretty-quick": "*",
-    "husky": "*"
+    "husky": "*",
+    "prettier": "*"
   }
 
   appPackage.husky = {
