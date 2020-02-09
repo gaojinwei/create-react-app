@@ -2,6 +2,16 @@
 
 `npx create-react-app YOUR_PROJECT_NAME --scripts-version simplified-react-scripts`
 
+## environment
+
+因为用到husky，所以要求：
+- Node >= 10
+- Git >= 2.13.0
+
+refer:
+- [husky](https://github.com/typicode/husky)
+- [prettier](https://prettier.io/docs/en/precommit.html)
+
 ## features
 
 ### pre-commit hook for prettier
